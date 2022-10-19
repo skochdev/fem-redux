@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fem-redux/static/css/main.17654e45.css",
+    "main.js": "/fem-redux/static/js/main.713c51ef.js",
+    "index.html": "/fem-redux/index.html",
+    "main.17654e45.css.map": "/fem-redux/static/css/main.17654e45.css.map",
+    "main.713c51ef.js.map": "/fem-redux/static/js/main.713c51ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17654e45.css",
+    "static/js/main.713c51ef.js"
+  ]
+}
