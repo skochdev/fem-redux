@@ -1,19 +1,21 @@
 import styled from 'styled-components';
+import { SetCounter } from '../SetCounter/SetCounter';
+import { useCounter } from '../../hooks/use-counter';
 
 export const Counter = () => {
-  const incident = 'Incident';
-  const count = 0;
+  const { incident, count, increment, decrement, set } = useCounter();
 
   return (
     <StyledWrapper>
       <main className='Counter'>
-        <h1>Days Since Last {incident}</h1>
+        <h1>Days Since I {incident}</h1>
         <p className='count'>{count}</p>
         <section className='controls'>
-          <button>Increment</button>
-          <button>Reset</button>
-          <button>Decrement</button>
+          <button onClick={() => increment()}>Increment</button>
+          <button onClick={() => set(0)}>Reset</button>
+          <button onClick={() => decrement()}>Decrement</button>
         </section>
+        <SetCounter />
       </main>
     </StyledWrapper>
   );
